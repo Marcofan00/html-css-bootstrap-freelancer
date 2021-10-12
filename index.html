@@ -5,88 +5,128 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
-  <title>Bootstrap Freelancer</title>
+  <title>Freelancer</title>
 </head>
+
 <body>
-  <header>
+  <header class="d-flex align-items-center fixed-top ">
     <div class="container-sm">
+      <!-- header left -->
       <nav class="row justify-content-between">
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-          <div class="_box"></div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 ">
+          <div class="_box fw-bold">START BOOTSTRAP</div>
         </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-          <div class="_box justify-content-end">
-            <ul class="d-flex justify-content-end">
-              <li class="li d-none d-sm-block"></li>
-              <li class="li d-none d-sm-block"></li>
-              <li class="li d-none d-sm-block"></li>
-              <li class="li d-inline-block d-sm-none"></li>
+        <!-- header right -->
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 align-items-center d-flex justify-content-end">
+          <div class="_box justify-content-end d-flex ">
+            <ul class="nav nav-pills d-none d-sm-block d-sm-flex justify-content-end fw-bold align-items-center">
+              <li class="nav-item pt-0 pb-0">
+                <a class="nav-link pt-0 pb-0 fl_voice-menu" aria-current="page" href="#">PORTFOLIO</a>
+              </li>
+              <li class="nav-item pt-0 pb-0">
+                <a class="nav-link pt-0 pb-0 fl_voice-menu" aria-current="page" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item pt-0 pb-0 pe-0">
+                <a class="nav-link pt-0 pb-0  pe-0 fl_voice-menu" aria-current="page" href="#">CONTACT</a>
+              </li>
             </ul>
+            <div class="fl_hamburger-menu d-sm-none">
+              <i class="fa-solid fa-bars"></i>
+            </div>
           </div>
         </div>
       </nav>
     </div>
   </header>
-  <div class="_jumbotron">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="_box"></div>
+
+  <!-- JUMBOTRON -->
+  <div class="fl-jumbotron  fl_bg-green pt-5 pb-5">
+    <div class="container-fluid text-center text-white">
+      <img class="pb-2" src="img/avatar.svg" alt="">
+      <h1 class="fw-bold ">START BOOTSTRAP</h1>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="fl_line fl_line-white"></div>
+        <div class="fl_star fl_star-white">
+          <i class="fa-solid fa-star"></i>
         </div>
+        <div class="fl_line fl_line-white"></div>
       </div>
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="_box"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="_box"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-          <div class="_box"></div>
-        </div>
-      </div>
+      <h6>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h6>
     </div>
   </div>
-
   <main>
-    <div class="section-portfolio">
-      <div class="container-sm  mt-3">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box"></div>
+    <!-- PORTFOLIO -->
+    <div class="section-portfolio pt-5 pb-5">
+      <div class="text-center">
+        <h2 class="fw-bold">PORTFOLIO</h2>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="fl_line fl_line-black"></div>
+          <div class="fl_star fl_star-black">
+            <i class="fa-solid fa-star"></i>
           </div>
+          <div class="fl_line fl_line-black"></div>
         </div>
+      </div>
+      <div class="container-sm">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box"></div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="_box-img position-relative">
+              <img src="img/cabin.png" alt="">
+              <div class="fl_layover">
+                <div class="fl_containter-fa-plus">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box">
-              <div class="row">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                  <div class="_box-nesting"></div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="_box-img position-relative">
+              <img src="img/cake.png" alt="">
+              <div class="fl_layover">
+                <div class="fl_containter-fa-plus">
+                  <i class="fa-solid fa-plus"></i>
                 </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                  <div class="_box-nesting"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="_box-img position-relative">
+              <img src="img/circus.png" alt="">
+              <div class="fl_layover">
+                <div class="fl_containter-fa-plus">
+                  <i class="fa-solid fa-plus"></i>
                 </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                  <div class="_box-nesting"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="_box-img position-relative">
+              <img src="img/game.png" alt="">
+              <div class="fl_layover">
+                <div class="fl_containter-fa-plus">
+                  <i class="fa-solid fa-plus"></i>
                 </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                  <div class="_box-nesting"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="_box-img position-relative">
+              <img src="img/safe.png" alt="">
+              <div class="fl_layover">
+                <div class="fl_containter-fa-plus">
+                  <i class="fa-solid fa-plus"></i>
                 </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                  <div class="_box-nesting"></div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                  <div class="_box-nesting"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="_box-img position-relative">
+              <img src="img/submarine.png" alt="">
+              <div class="fl_layover">
+                <div class="fl_containter-fa-plus">
+                  <i class="fa-solid fa-plus"></i>
                 </div>
               </div>
             </div>
@@ -94,90 +134,112 @@
         </div>
       </div>
     </div>
-    <div class="section-about mt-3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box"></div>
+
+    <!-- SECTION ABOUT -->
+    <section class="about fl_bg-green pt-5 pb-5 text-white">
+      <div class="text-center">
+        <h2>ABOUT</h2>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="fl_line fl_line-white"></div>
+          <div class="fl_star fl_star-white">
+            <i class="fa-solid fa-star"></i>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="_box"></div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="_box"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box"></div>
-          </div>
+          <div class="fl_line fl_line-white"></div>
         </div>
       </div>
-    </div>
-    <div class="section-contact pt-3">
-      <div class="container-sm">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box _box-r"></div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box _box-r"></div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box _box-r"></div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box _box-r"></div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box _box-r"></div>
-          </div>
+      <div class="fl_container-60">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Freelancer is a free bootstrap theme created by Start Boortstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS styleheets for easy customization</p>
+            </div>
+            <div class="col-sm-6">
+              <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            </div>
+            <div class="fl_bnt d-flex justify-content-center pt-3">
+              <button type="button" class="btn btn-outline-light fl_bnt-section-about">
+                <i class="fa-solid fa-download"></i>
+               Download</button>
+            </div>
         </div>
       </div>
-    </div>
+    </section>
+  
+    <!-- CONTACT -->
+    <section class="fl_section-contact pt-5">
+      <div class="text-center">
+        <h2 class="fw-bold">PORTFOLIO</h2>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="fl_line fl_line-black"></div>
+          <div class="fl_star fl_star-black">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="fl_line fl_line-black"></div>
+        </div>
+      </div>
+      <div class="fl_container-60">
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Phone Number">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+        </div>
+        <button type="button" class="btn btn-success fl_bnt-green mb-4">Send</button>
+      </div>
+  
+    </section>
   </main>
-  <footer class="mt-3">
-    <div class="footer-top">
+
+  <!-- FOOTER -->
+  <footer class="text-white">
+    <div class="fl_footer-top pt-4 pb-4">
       <div class="container-sm">
         <div class="row">
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-            <div class="_box"></div>
+          <div class="col-md-4 text-center pt-3">
+            <div>LOCATION</div>
+            <P>2215 jOHN dANIEL dRIVE cLARK, mo 54243</P>
           </div>
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-            <div class="_box"></div>
+          <div class="col-md-4 text-center pt-3">
+            <div>AROUND THE WEB</div>
+            <div class="icon-container">
+              <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
           </div>
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-            <div class="_box"></div>
+          <div class="col-md-4 text-center pt-3">
+            <div>ABOUT FREELANCER</div>
+            <P>Freelancer is a free to use, open source Bootstrap theme created by
+              <span class="fl_cl-green">Start Bootstrap</span>
+            </P>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="_box"></div>
-          </div>
-        </div>
-      </div>
+    <div class="fl_footer-bottom pt-4 pb-4 text-center">
+      <span>Copyright
+        <i class="fa-regular fa-copyright"></i>
+         Your Website 2019
+      </span>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
